@@ -2,9 +2,7 @@
 import '../../domain/entities/note.dart';
 
 class NoteModel extends Note {
-  NoteModel(
-      {required String id, required String title, required String content})
-      : super(id: id, title: title, content: content);
+  NoteModel({required super.id, required super.title, required super.content});
 
   factory NoteModel.fromJson(Map<String, dynamic> json) {
     return NoteModel(
